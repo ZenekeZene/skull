@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skull Game</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+  </head>
+
+  <body>
+    <main id="js-background" class="main">
+      <header class="header slideInDown animated">
+        Touch the <i class="fa fa-skull">!</i>
+      </header>
+      <section class="grid" id="js-grid-table"></section>
+      <footer class="interface slideInUp animated">
+        <button class="interface__play" id="js-play-button">
+          <i class="fa fa-play"></i>
+        </button>
+        <p class="interface__seconds">
+          <span id="js-seconds"></span><i class="far fa-clock"></i>
+        </p>
+        <div class="interface__counters">
+          <p class="counter counter--skull">
+            <span id="js-skull-count"></span><i class="fa fa-skull"></i>
+          </p>
+          <p class="counter counter--fail">
+            <span id="js-fail-count"></span><i class="fa fa-times"></i>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
